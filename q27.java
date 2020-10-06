@@ -4,7 +4,7 @@ public class q27 {
 	public static void main(String[] args)
 	{
 		int max;
-		int min;
+		int min = 0;
 		int i;
 		Scanner scan = new Scanner(System.in);
 		System.out.println("how many elemnts u want to enter in array:");
@@ -28,9 +28,16 @@ public class q27 {
 			//System.out.println(max);
 			max = arr[i];
 		}
+		min = arr[0];
+		if(min > arr[i])
+		{
+			//System.out.println(max);
+			min = arr[i];
+		}
 		
 		}
 		System.out.println("max is:"+max);
+		System.out.println("min is:"+min);
 		
 		}
 
